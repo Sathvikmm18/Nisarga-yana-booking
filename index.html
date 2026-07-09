@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="kn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ನಿಸರ್ಗ ಯಾನ organizes adventurous trekking, road trips, camping, and weekend getaways for solo travelers and groups."
+    />
+    <title>ನಿಸರ್ಗ ಯಾನ | Travel Trip Organizer</title>
+    <link rel="icon" type="image/png" href="./src/assets/nisarga-yana-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Kannada:wght@500;700;900&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="splash" id="splash" aria-label="ನಿಸರ್ಗ ಯಾನ opening screen">
+      <img src="./src/assets/nisarga-yana-logo.png" alt="ನಿಸರ್ಗ ಯಾನ logo" />
+      <span></span>
+    </div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="ನಿಸರ್ಗ ಯಾನ home">
+        <img src="./src/assets/nisarga-yana-logo.png" alt="" />
+        <span>ನಿಸರ್ಗ ಯಾನ</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#experiences">Trips</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Escape from ordinary</p>
+          <br>
+          <h1 id="hero-title">ನಿಸರ್ಗ ಯಾನ</h1>
+          <p class="hero-subtitle">Travel trip organizer for adventurous trekking, road trips, camping, and weekend getaways.</p>
+          <p class="hero-text">
+            Whether you are traveling solo or looking to meet like-minded people, our trips are designed to create memorable
+            friendships and experiences that last a lifetime.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#booking">Book Kanniyakumari Trip</a>
+            <a class="button secondary" href="#contact">Talk to us</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Upcoming trip preview">
+          <img src="./src/assets/nisarga-yana-logo.png" alt="ನಿಸರ್ಗ ಯಾನ adventure travel logo" />
+          <div>
+            <p class="trip-label">Upcoming getaway</p>
+            <h2>Kanniyakumari</h2>
+            <p>17 July 2026 to 19 July 2026</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="experiences" id="experiences" aria-labelledby="experiences-title">
+        <div class="section-heading">
+          <p class="eyebrow">What we organize</p>
+          <h2 id="experiences-title">Adventure, friendship, and fresh air in one plan.</h2>
+        </div>
+        <div class="experience-grid">
+          <article>
+            <span class="experience-icon">T</span>
+            <h3>Trekking</h3>
+            <p>Guided trail days with steady pacing, nature views, and group energy.</p>
+          </article>
+          <article>
+            <span class="experience-icon">R</span>
+            <h3>Road Trips</h3>
+            <p>Scenic routes, music-filled rides, planned stops, and comfortable coordination.</p>
+          </article>
+          <article>
+            <span class="experience-icon">C</span>
+            <h3>Camping</h3>
+            <p>Open skies, simple camp moments, shared food, and safe outdoor stays.</p>
+          </article>
+          <article>
+            <span class="experience-icon">W</span>
+            <h3>Weekend Getaways</h3>
+            <p>Short, refreshing escapes made for solo travelers, friends, and new groups.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="booking-band" id="booking" aria-labelledby="booking-title">
+        <div class="booking-info">
+          <p class="eyebrow">Now booking</p>
+          <h2 id="booking-title">Kanniyakumari Trip</h2>
+          <dl class="trip-facts">
+            <div>
+              <dt>Date</dt>
+              <dd>17-07-2026 to 19-07-2026</dd>
+            </div>
+            <div>
+              <dt>Place</dt>
+              <dd>Kanniyakumari</dd>
+            </div>
+            <div>
+              <dt>Best for</dt>
+              <dd>Solo travelers, friend groups, and first-time joiners</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form
+          class="booking-form"
+          id="bookingForm"
+          action="https://formspree.io/f/mzdllqjn"
+          method="POST"
+          target="bookingSubmitFrame"
+          novalidate
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Nisarga Yana booking request - Kanniyakumari"
+          />
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="Trip" value="Kanniyakumari" />
+          <input
+            type="hidden"
+            name="Trip dates"
+            value="17-07-2026 to 19-07-2026"
+          />
+
+          <div class="form-topline">
+            <h3>Booking request</h3>
+            <span>I will reach you soon</span>
+          </div>
+
+          <label>
+            Full name
+            <input
+              name="Full name"
+              type="text"
+              autocomplete="name"
+              required
+            />
+          </label>
+
+          <div class="form-row">
+            <label>
+              Phone number
+              <input
+                name="Phone number"
+                type="tel"
+                autocomplete="tel"
+                required
+              />
+            </label>
+
+            <label>
+              Email
+              <input
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Travelers
+              <input
+                name="Number of travelers"
+                type="number"
+                min="1"
+                max="30"
+                value="1"
+                required
+              />
+            </label>
+
+            <label>
+              Travel style
+              <select name="Travel style" required>
+                <option value="Solo">Solo</option>
+                <option value="With friends">With friends</option>
+                <option value="Family">Family</option>
+                <option value="Group">Group</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Pickup city
+            <input
+              name="Pickup city"
+              type="text"
+              placeholder="Example: Bengaluru"
+              required
+            />
+          </label>
+
+          <label>
+            Message
+            <textarea
+              name="Message"
+              rows="4"
+              placeholder="Tell us anything we should know"
+            ></textarea>
+          </label>
+
+          <button class="button primary submit-button" type="submit">
+            Submit booking
+          </button>
+
+          <p
+            class="form-status"
+            id="formStatus"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+
+        <iframe
+          id="bookingSubmitFrame"
+          class="hidden-frame"
+          name="bookingSubmitFrame"
+          title="Booking submission"
+        ></iframe>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Start the journey with us.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/nisarga.yana" target="_blank" rel="noreferrer">Instagram: nisarga.yana</a>
+          <a href="mailto:nisargayana2026@gmail.com">Email: nisargayana2026@gmail.com</a>
+          <a href="tel:+919611938650">Phone: 9611938650</a>
+          <a href="tel:+917204653795">Phone: 7204653795</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>ನಿಸರ್ಗ ಯಾನ</span>
+      <span>Adventure trips, weekend getaways, and lifelong memories.</span>
+    </footer>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

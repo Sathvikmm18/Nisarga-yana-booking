@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.local
+
+tmp/
+outputs/
+analysis_workspace/
+
+.DS_Store
