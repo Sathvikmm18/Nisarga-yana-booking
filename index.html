@@ -71,58 +71,38 @@
         </div>
       </div>
     </section>
-    <section
-    id="pickup-points"
-    class="pickup-section"
-    aria-labelledby="pickup-title"
->
-    <div class="section-heading">
+    <section id="pickup-points" class="pickup-section" aria-labelledby="pickup-title">
+      <div class="section-heading">
         <p class="eyebrow">Boarding Points</p>
         <h2 id="pickup-title">
-            Pickup & Drop Locations
+          Pickup & Drop Locations
         </h2>
 
         <p>
-            Click any location below to view on Google Maps.
+          Click any location below to view on Google Maps.
         </p>
-    </div>
+      </div>
 
-    <div class="pickup-grid">
+      <div class="pickup-grid">
 
-        <a
-            href="https://maps.google.com/?q=Majestic+Bangalore"
-            target="_blank"
-            class="pickup-card"
-        >
-            📍 Majestic
+        <a href="https://maps.google.com/?q=Majestic+Bangalore" target="_blank" class="pickup-card">
+          📍 Majestic
         </a>
 
-        <a
-            href="https://maps.google.com/?q=Goraguntepalya+Metro+Station"
-            target="_blank"
-            class="pickup-card"
-        >
-            🚇 Goraguntepalya Metro Station
+        <a href="https://maps.google.com/?q=Goraguntepalya+Metro+Station" target="_blank" class="pickup-card">
+          🚇 Goraguntepalya Metro Station
         </a>
 
-        <a
-            href="https://maps.google.com/?q=Nagasandra+Metro+Station"
-            target="_blank"
-            class="pickup-card"
-        >
-            🚇 Nagasandra
+        <a href="https://maps.google.com/?q=Nagasandra+Metro+Station" target="_blank" class="pickup-card">
+          🚇 Nagasandra
         </a>
 
-        <a
-            href="https://maps.google.com/?q=Nelamangala"
-            target="_blank"
-            class="pickup-card"
-        >
-            🚌 Nelamangala
+        <a href="https://maps.google.com/?q=Nelamangala" target="_blank" class="pickup-card">
+          🚌 Nelamangala
         </a>
 
-    </div>
-</section>
+      </div>
+    </section>
 
     <section class="experiences" id="experiences" aria-labelledby="experiences-title">
       <div class="section-heading">
@@ -220,8 +200,14 @@
         </div>
 
         <label>
-          Pickup city
-          <input name="Pickup city" type="text" placeholder="Example: SAKLESHPURA" required />
+          Pickup Point
+          <select name="Pickup Point" required>
+            <option value="" selected disabled>Select your pickup point</option>
+            <option value="Majestic">Majestic</option>
+            <option value="Goraguntepalya Metro Station">Goraguntepalya Metro Station</option>
+            <option value="Nagasandra">Nagasandra</option>
+            <option value="Nelamangala">Nelamangala</option>
+          </select>
         </label>
 
         <label>
